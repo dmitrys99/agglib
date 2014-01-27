@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы исходного кода\AGG">
+      <UniqueIdentifier>{40b3c92a-e633-490a-944a-eb90b54ac9ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\AGG">
+      <UniqueIdentifier>{a7db2c92-23cf-408b-a9a8-06a759f4af56}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="agglib.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_arc.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_array.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_basics.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_bezier_arc.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_clip_liang_barsky.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\util\agg_color_conv.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\util\agg_color_conv_rgb16.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\util\agg_color_conv_rgb8.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_color_gray.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_color_rgba.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_config.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_conv_curve.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_conv_transform.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\ctrl\agg_ctrl.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_curves.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_ellipse.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_font_cache_manager.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\font_win32_tt\agg_font_win32_tt.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_gamma_functions.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_math.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_path_storage.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_path_storage_integer.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_pixfmt_gray.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_pixfmt_rgb.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_pixfmt_rgba.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\platform\agg_platform_support.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_rasterizer_cells_aa.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_rasterizer_scanline_aa.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_rasterizer_sl_clip.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_renderer_base.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_renderer_scanline.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_rendering_buffer.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_scanline_bin.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_scanline_p.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_scanline_storage_aa.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_scanline_storage_bin.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_scanline_u.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_trans_affine.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_trans_viewport.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\platform\win32\agg_win32_bmp.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_renderer_primitives.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\agg\include\agg_renderer_outline_aa.h">
+      <Filter>Заголовочные файлы\AGG</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="agglib.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_arc.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_arrowhead.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_bezier_arc.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_bspline.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_curves.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_embedded_raster_fonts.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_gsv_text.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_image_filters.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_line_aa_basics.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_line_profile_aa.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\platform\win32\agg_platform_support.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_rounded_rect.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_sqrt_tables.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_trans_affine.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_trans_double_path.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_trans_single_path.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_trans_warp_magnifier.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_vcgen_bspline.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_vcgen_contour.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_vcgen_dash.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_vcgen_markers_term.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_vcgen_smooth_poly1.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_vcgen_stroke.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_vpgen_clip_polygon.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_vpgen_clip_polyline.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\agg_vpgen_segmentator.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\src\platform\win32\agg_win32_bmp.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\agg\font_win32_tt\agg_font_win32_tt.cpp">
+      <Filter>Файлы исходного кода\AGG</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

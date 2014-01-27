@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CEF54F7C-18AD-40B3-A0EA-394F7A0EA706}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>agglib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\User\Documents\Visual Studio 2012\Projects\agglib\agg\include;C:\Users\User\Documents\Visual Studio 2012\Projects\agglib\agg\include\platform\win32;C:\Users\User\Documents\Visual Studio 2012\Projects\agglib\agg\font_win32_tt;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Users\User\Documents\Visual Studio 2012\Projects\agglib\agg\src;C:\Users\User\Documents\Visual Studio 2012\Projects\agglib\agg\src\platform\win32;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\User\Documents\Visual Studio 2012\Projects\agglib\agg\include;C:\Users\User\Documents\Visual Studio 2012\Projects\agglib\agg\include\platform\win32;C:\Users\User\Documents\Visual Studio 2012\Projects\agglib\agg\font_win32_tt;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Users\User\Documents\Visual Studio 2012\Projects\agglib\;C:\Users\User\Documents\Visual Studio 2012\Projects\agglib\agg\src;C:\Users\User\Documents\Visual Studio 2012\Projects\agglib\agg\src\platform\win32;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;AGGLIB_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;AGGLIB_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\agg\font_win32_tt\agg_font_win32_tt.h" />
+    <ClInclude Include="..\agg\include\agg_arc.h" />
+    <ClInclude Include="..\agg\include\agg_array.h" />
+    <ClInclude Include="..\agg\include\agg_basics.h" />
+    <ClInclude Include="..\agg\include\agg_bezier_arc.h" />
+    <ClInclude Include="..\agg\include\agg_clip_liang_barsky.h" />
+    <ClInclude Include="..\agg\include\agg_color_gray.h" />
+    <ClInclude Include="..\agg\include\agg_color_rgba.h" />
+    <ClInclude Include="..\agg\include\agg_config.h" />
+    <ClInclude Include="..\agg\include\agg_conv_curve.h" />
+    <ClInclude Include="..\agg\include\agg_conv_transform.h" />
+    <ClInclude Include="..\agg\include\agg_curves.h" />
+    <ClInclude Include="..\agg\include\agg_ellipse.h" />
+    <ClInclude Include="..\agg\include\agg_font_cache_manager.h" />
+    <ClInclude Include="..\agg\include\agg_gamma_functions.h" />
+    <ClInclude Include="..\agg\include\agg_math.h" />
+    <ClInclude Include="..\agg\include\agg_path_storage.h" />
+    <ClInclude Include="..\agg\include\agg_path_storage_integer.h" />
+    <ClInclude Include="..\agg\include\agg_pixfmt_gray.h" />
+    <ClInclude Include="..\agg\include\agg_pixfmt_rgb.h" />
+    <ClInclude Include="..\agg\include\agg_pixfmt_rgba.h" />
+    <ClInclude Include="..\agg\include\agg_rasterizer_cells_aa.h" />
+    <ClInclude Include="..\agg\include\agg_rasterizer_scanline_aa.h" />
+    <ClInclude Include="..\agg\include\agg_rasterizer_sl_clip.h" />
+    <ClInclude Include="..\agg\include\agg_renderer_base.h" />
+    <ClInclude Include="..\agg\include\agg_renderer_outline_aa.h" />
+    <ClInclude Include="..\agg\include\agg_renderer_primitives.h" />
+    <ClInclude Include="..\agg\include\agg_renderer_scanline.h" />
+    <ClInclude Include="..\agg\include\agg_rendering_buffer.h" />
+    <ClInclude Include="..\agg\include\agg_scanline_bin.h" />
+    <ClInclude Include="..\agg\include\agg_scanline_p.h" />
+    <ClInclude Include="..\agg\include\agg_scanline_storage_aa.h" />
+    <ClInclude Include="..\agg\include\agg_scanline_storage_bin.h" />
+    <ClInclude Include="..\agg\include\agg_scanline_u.h" />
+    <ClInclude Include="..\agg\include\agg_trans_affine.h" />
+    <ClInclude Include="..\agg\include\agg_trans_viewport.h" />
+    <ClInclude Include="..\agg\include\ctrl\agg_ctrl.h" />
+    <ClInclude Include="..\agg\include\platform\agg_platform_support.h" />
+    <ClInclude Include="..\agg\include\platform\win32\agg_win32_bmp.h" />
+    <ClInclude Include="..\agg\include\util\agg_color_conv.h" />
+    <ClInclude Include="..\agg\include\util\agg_color_conv_rgb16.h" />
+    <ClInclude Include="..\agg\include\util\agg_color_conv_rgb8.h" />
+    <ClInclude Include="agglib.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\agg\font_win32_tt\agg_font_win32_tt.cpp" />
+    <ClCompile Include="..\agg\src\agg_arc.cpp" />
+    <ClCompile Include="..\agg\src\agg_arrowhead.cpp" />
+    <ClCompile Include="..\agg\src\agg_bezier_arc.cpp" />
+    <ClCompile Include="..\agg\src\agg_bspline.cpp" />
+    <ClCompile Include="..\agg\src\agg_curves.cpp" />
+    <ClCompile Include="..\agg\src\agg_embedded_raster_fonts.cpp" />
+    <ClCompile Include="..\agg\src\agg_gsv_text.cpp" />
+    <ClCompile Include="..\agg\src\agg_image_filters.cpp" />
+    <ClCompile Include="..\agg\src\agg_line_aa_basics.cpp" />
+    <ClCompile Include="..\agg\src\agg_line_profile_aa.cpp" />
+    <ClCompile Include="..\agg\src\agg_rounded_rect.cpp" />
+    <ClCompile Include="..\agg\src\agg_sqrt_tables.cpp" />
+    <ClCompile Include="..\agg\src\agg_trans_affine.cpp" />
+    <ClCompile Include="..\agg\src\agg_trans_double_path.cpp" />
+    <ClCompile Include="..\agg\src\agg_trans_single_path.cpp" />
+    <ClCompile Include="..\agg\src\agg_trans_warp_magnifier.cpp" />
+    <ClCompile Include="..\agg\src\agg_vcgen_bspline.cpp" />
+    <ClCompile Include="..\agg\src\agg_vcgen_contour.cpp" />
+    <ClCompile Include="..\agg\src\agg_vcgen_dash.cpp" />
+    <ClCompile Include="..\agg\src\agg_vcgen_markers_term.cpp" />
+    <ClCompile Include="..\agg\src\agg_vcgen_smooth_poly1.cpp" />
+    <ClCompile Include="..\agg\src\agg_vcgen_stroke.cpp" />
+    <ClCompile Include="..\agg\src\agg_vpgen_clip_polygon.cpp" />
+    <ClCompile Include="..\agg\src\agg_vpgen_clip_polyline.cpp" />
+    <ClCompile Include="..\agg\src\agg_vpgen_segmentator.cpp" />
+    <ClCompile Include="..\agg\src\platform\win32\agg_platform_support.cpp" />
+    <ClCompile Include="..\agg\src\platform\win32\agg_win32_bmp.cpp" />
+    <ClCompile Include="agglib.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
