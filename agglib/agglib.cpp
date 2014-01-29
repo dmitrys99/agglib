@@ -601,7 +601,16 @@ int scroll(surface* surface, int dx, int dy, unsigned color, bool use_opacity) {
 	}
 }
 
+int show_surface(surface* surface, HDC dc)
+{
+    if (surface) {
+        surface->pmap->draw(dc, 0, 0);
+        return 0;
+	} else {
+		return 1;
+	}
 
+}
 
 // Необходимости в этой процедуре нет, но она должна быть объявлена, т.к. без нее проект не собирается.
 int agg_main(int argc, char* argv[])
