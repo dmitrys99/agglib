@@ -77,18 +77,18 @@ AGGLIB_API int draw_string(surface* surface, font_engine* fe,
 						   float x, float y,
 						   wchar_t* s, 
 						   unsigned color, bool use_opacity,
-						   char* fontname, float height, int font_weight,
+						   wchar_t* fontname, float height, int font_weight,
 						   bool italic, bool underline, bool strikeout);
 
 AGGLIB_API int draw_sstring(surface* surface, font_engine* fe, 
 						   float x, float y,
 						   char* s, 
 						   unsigned color, bool use_opacity,
-						   char* fontname, float height, int font_weight,
+						   wchar_t* fontname, float height, int font_weight,
 						   bool italic, bool underline, bool strikeout);
 
 AGGLIB_API int choose_font(font_engine* fe, 
-			        	   char* fontname, float height, int font_weight, 
+			        	   wchar_t* fontname, float height, int font_weight, 
 				           bool italic, bool underline, bool strikeout);
 
 AGGLIB_API int get_stext_advice(font_engine* fe, char* s, double* advicex, double* advicey);

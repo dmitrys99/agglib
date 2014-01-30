@@ -160,7 +160,7 @@ int draw_oval(surface* surface, float l, float t, float r, float b, float w, uns
 
 unsigned internal_draw_text(
 	wchar_t* text, 
-	char* typeface, 
+	wchar_t* typeface, 
 	float height, 
 	int font_weight, 
 	float stroke_weight,
@@ -308,7 +308,7 @@ int draw_sstring(surface* surface, font_engine* fe,
 			     float x, float y,
 			 	 char* s, 
 				 unsigned color, bool use_opacity,
-				 char* fontname, float height, int font_weight,
+				 wchar_t* fontname, float height, int font_weight,
 				 bool italic, bool underline, bool strikeout) {
 					 if (surface && fe && s) {
 						int buflen = MultiByteToWideChar(CP_ACP, 0, s, -1, NULL, 0);
@@ -330,7 +330,7 @@ int draw_string(surface* surface, font_engine* fe,
 			    float x, float y,
 				wchar_t* s, 
 				unsigned color, bool use_opacity,
-				char* fontname, float height, int font_weight,
+				wchar_t* fontname, float height, int font_weight,
 				bool italic, bool underline, bool strikeout)
 {
 	if (surface && fe) {
@@ -513,7 +513,7 @@ int get_stext_advice(font_engine* fe, char* s, double* advicex, double* advicey)
 }
 
 int choose_font(font_engine* fe, 
-				char* fontname, float height, int font_weight, 
+				wchar_t* fontname, float height, int font_weight, 
 				bool italic, bool underline, bool strikeout){
 	if (fe) {
 		fe->feng.create_font(fontname, agg::glyph_ren_outline, height, 0.0, font_weight, italic, underline, strikeout, ANSI_CHARSET, FF_DONTCARE);
