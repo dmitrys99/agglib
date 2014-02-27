@@ -468,7 +468,7 @@ int delete_font_engine(font_engine* fe) {
 
 int get_text_advice(font_engine* fe, wchar_t* s, double* advicex, double* advicey){
 	if (fe) {
-		// предполагается, что при входе сюда шрифт уже выбран,
+		//  предполагается, что при входе сюда шрифт уже выбран,
 		// поэтому сразу начинаем считать.
 		double x = 0.0;
         double y = 0.0;
@@ -601,10 +601,19 @@ int scroll(surface* surface, int dx, int dy, unsigned color, bool use_opacity) {
 	}
 }
 
-int show_surface(surface* surface, HDC dc)
+int show_surface(surface* surface, HDC dc, int sl, int st, int sr, int sb, int dl, int dt, int dr, int db)
 {
+    RECT rs, rd;
+    rs.right  = sr;
+    rs.top    = st;
+    rs.left   = sl;
+    rs.bottom = sb;
+    rd.right  = dr;
+    rd.top    = dt;
+    rd.left   = dl;
+    rd.bottom = db;
     if (surface) {
-        surface->pmap->draw(dc, 0, 0);
+        surface->pmap->draw(dc, &rd, &rs);
         return 0;
 	} else {
 		return 1;

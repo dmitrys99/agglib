@@ -95,4 +95,4 @@ AGGLIB_API int get_stext_advice(font_engine* fe, char* s, double* advicex, doubl
 AGGLIB_API int get_text_advice(font_engine* fe, wchar_t* s, double* advicex, double* advicey);
 
 AGGLIB_API int scroll(surface* surface, int dx, int dy, unsigned color, bool use_opacity);
-AGGLIB_API int show_surface(surface* surface, HDC dc);
+AGGLIB_API int show_surface(surface* surface, HDC dc, int sr, int st, int sl, int sb, int dr, int dt, int dl, int db);
